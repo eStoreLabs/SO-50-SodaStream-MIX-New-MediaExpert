@@ -1,0 +1,1426 @@
+<style>
+			@font-face {
+				font-family: "HurmeGeometricSans3";
+				src: local("HurmeGeometricSans3"),
+					url("../fonts/HurmeGeometricSans3-Bold.woff") format("woff");
+				font-weight: 700;
+			}
+			@font-face {
+				font-family: "HurmeGeometricSans3";
+				src: local("HurmeGeometricSans3"),
+					url("../fonts/HurmeGeometricSans3-Regular.woff") format("woff");
+				font-weight: 400;
+			}
+			@font-face {
+				font-family: "HurmeGeometricSans3";
+				src: local("HurmeGeometricSans3"),
+					url("../fonts/HurmeGeometricSans3-Black.woff") format("woff");
+				font-weight: 900;
+			}
+			@font-face {
+				font-family: "HurmeGeometricSans3";
+				src: local("HurmeGeometricSans3"),
+					url("../fonts/HurmeGeometricSans3-Light.woff2") format("woff2");
+				font-weight: 300;
+			}
+			#es-rc #es-rc-content {
+				font-family: "HurmeGeometricSans3", sans-serif;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.2;
+				color: #eeeae5;
+				background-color: #002349;
+				max-width: 1000px;
+				margin: auto;
+				container: es-rc-content/inline-size;
+				overflow: hidden;
+			}
+			#es-rc #es-rc-content ::-moz-selection {
+				background-color: #eeeae5;
+				color: #002349;
+			}
+			#es-rc #es-rc-content ::selection {
+				background-color: #eeeae5;
+				color: #002349;
+			}
+			#es-rc #es-rc-content * {
+				box-sizing: border-box;
+			}
+			#es-rc #es-rc-content p {
+				margin: 0;
+			}
+			#es-rc #es-rc-content img {
+				width: 100%;
+				display: block;
+				margin: 0 auto;
+			}
+			#es-rc #es-rc-content button {
+				display: block;
+			}
+			#es-rc #es-rc-content .es-desktop {
+				display: flex;
+				position: relative;
+			}
+			#es-rc #es-rc-content .es-pre-kv {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: #012349;
+				padding: 0;
+				gap: 30px;
+			}
+			#es-rc #es-rc-content .es-pre-kv__left {
+				width: 100%;
+			}
+			#es-rc #es-rc-content .es-pre-kv__video {
+				width: 100%;
+				display: block;
+				margin: 0 auto;
+				min-height: 250px;
+			}
+			#es-rc #es-rc-content .es-pre-kv__right {
+				padding-bottom: 30px;
+			}
+			#es-rc #es-rc-content .es-pre-kv__list {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				gap: 30px;
+			}
+			#es-rc #es-rc-content .es-pre-kv__list-item-img {
+				margin-bottom: 10px;
+				width: 100px;
+				height: 100px;
+			}
+			#es-rc #es-rc-content .es-pre-kv__list-item-title {
+				text-align: center;
+				color: #fff;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-gas-and-mix {
+				z-index: 2;
+				position: relative;
+				padding-top: 30px;
+			}
+			#es-rc #es-rc-content .es-gas-and-mix__section-1 {
+				display: flex;
+				position: relative;
+				right: -35px;
+				padding-bottom: 100px;
+			}
+			#es-rc #es-rc-content .es-gas-and-mix__section-1-description {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			#es-rc #es-rc-content .es-gas-and-mix__section-1-description-title {
+				font-size: 48px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-gas-and-mix__section-1-description-text {
+				margin-top: 50px;
+				font-size: 30px;
+				font-weight: 700;
+				color: #7fbff5;
+			}
+			#es-rc #es-rc-content .es-gas-and-mix__section-2 {
+				padding: 42px 20px 79px 20px;
+				text-align: center;
+				color: #13294b;
+				background: #fff;
+				z-index: 2;
+				position: relative;
+			}
+			#es-rc #es-rc-content .es-gas-and-mix__section-2-description {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			#es-rc #es-rc-content .es-gas-and-mix__section-2-description-text {
+				font-size: 19px;
+			}
+			#es-rc #es-rc-content .es-gas-and-mix__section-2-description-title {
+				margin: 35px 0;
+				font-size: 23px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-gas-and-mix__section-2-description-subtitle {
+				font-size: 12px;
+				font-weight: 400;
+			}
+			#es-rc #es-rc-content .es-assets-mix {
+				background-color: #fff;
+			}
+			#es-rc #es-rc-content .es-assets-mix__content {
+				padding-top: 78px;
+				padding-bottom: 78px;
+				display: flex;
+				color: #002349;
+			}
+			#es-rc #es-rc-content .es-assets-mix__content-image {
+				margin-left: -115px;
+			}
+			#es-rc #es-rc-content .es-assets-mix__content-description {
+				padding-right: 30px;
+				padding-left: 17px;
+				font-size: 18px;
+			}
+			#es-rc #es-rc-content .es-assets-mix__content-description-title {
+				margin-bottom: 40px;
+				font-size: 30px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-assets-mix__content-description-text-1 {
+				margin-bottom: 45px;
+				font-weight: 400;
+			}
+			#es-rc #es-rc-content .es-assets-mix__content-description-text-2 {
+				margin-bottom: 65px;
+				padding-left: 22px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-assets-mix__content-description-text-3 {
+				font-weight: 400;
+			}
+			#es-rc #es-rc-content .es-assets-mix-func-and-style {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				position: relative;
+			}
+			#es-rc #es-rc-content .es-assets-mix-func-and-style__section-1 {
+				display: flex;
+				gap: 30px;
+			}
+			#es-rc #es-rc-content .es-assets-mix-func-and-style__section-1-description {
+				padding-top: 67px;
+				padding-left: 40px;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-func-and-style__section-1-description-title {
+				font-size: 36px;
+				font-weight: 700;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-func-and-style__section-1-description-text {
+				margin-top: 28px;
+				font-size: 18px;
+				font-weight: 400;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-func-and-style__section-1__mix-date-night-image {
+				margin-right: -125px;
+				margin-top: -70px;
+				max-height: 650px;
+			}
+			#es-rc #es-rc-content .es-assets-mix-func-and-style__section-2-mobile {
+				display: none;
+			}
+			#es-rc #es-rc-content .es-assets-mix-func-and-style__section-2 {
+				position: relative;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-func-and-style__section-2-sodastream-image {
+				position: relative;
+				margin-top: 22px;
+				padding: 0 130px;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-func-and-style__section-2-image-container-text-title {
+				width: 250px;
+				position: absolute;
+				font-size: 18px;
+				font-weight: 700;
+				text-align: center;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+					1
+				) {
+				top: 160px;
+				left: 70px;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+					2
+				) {
+				top: 380px;
+				left: 60px;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+					3
+				) {
+				top: 606px;
+				left: 70px;
+				width: 270px;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+					4
+				) {
+				top: 260px;
+				left: 680px;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+					5
+				) {
+				top: 510px;
+				left: 690px;
+			}
+			#es-rc #es-rc-content .es-assets-mix-gas-and-taste-2 {
+				display: flex;
+				gap: 6px;
+				background-color: #fff;
+			}
+			#es-rc #es-rc-content .es-assets-mix-gas-and-taste-2__image-container {
+				width: 100%;
+				position: relative;
+			}
+			#es-rc #es-rc-content .es-assets-mix-gas-and-taste-2__image-container-text-2 {
+				width: 100%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-gas-and-taste-2__image-container-text-2-title-2 {
+				font-size: 70px;
+				font-weight: 700;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-gas-and-taste-2__image-container-text-2-title-2--small {
+				font-size: 30px;
+				font-weight: 700;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-gas-and-taste-2__image-container-text-2-subtitle {
+				font-size: 30px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-assets-mix-gas-and-taste {
+				display: flex;
+				gap: 6px;
+				background-color: #eeeae5;
+			}
+			#es-rc #es-rc-content .es-assets-mix-gas-and-taste__image-container {
+				width: 100%;
+				position: relative;
+			}
+			#es-rc #es-rc-content .es-assets-mix-gas-and-taste__image-container-text {
+				width: 100%;
+				position: absolute;
+				top: 30px;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-assets-mix-gas-and-taste__image-container-text-title {
+				font-size: 70px;
+				line-height: 70px;
+				font-weight: 700;
+			}
+			#es-rc
+				#es-rc-content
+				.es-assets-mix-gas-and-taste__image-container-text-subtitle {
+				font-size: 30px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-sodastream-mix {
+				color: #002349;
+				background-color: #eeeae5;
+				padding: 48px 42px 58px 42px;
+				font-size: 18px;
+				font-weight: 400;
+			}
+			#es-rc #es-rc-content .es-sodastream-mix__title {
+				margin: 0;
+				color: #002349;
+				font-size: 36px;
+				font-weight: 700;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-sodastream-mix__text-1 {
+				margin-top: 26px;
+			}
+			#es-rc #es-rc-content .es-sodastream-mix__text-2 {
+				font-weight: 700;
+				padding-left: 19.69px;
+			}
+			#es-rc #es-rc-content .es-sodastream-mix__text-2--regular {
+				font-weight: 400;
+			}
+			#es-rc #es-rc-content .es-sodastream-mix__text-4 {
+				font-weight: 700;
+				padding-left: 19.69px;
+			}
+			#es-rc #es-rc-content .es-sodastream-mix__text-4--regular {
+				font-weight: 400;
+			}
+			#es-rc #es-rc-content .es-sodastream-mix__video {
+				width: 100%;
+				height: 460px;
+				margin-top: 25px;
+			}
+			#es-rc #es-rc-content .es-worth-to-know {
+				padding: 40px 30px 40px 30px;
+			}
+			#es-rc #es-rc-content .es-worth-to-know__title {
+				text-align: center;
+				font-size: 36px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-worth-to-know__text {
+				margin-top: 52px;
+				margin-bottom: 30px;
+				font-size: 19px;
+			}
+			#es-rc #es-rc-content .es-worth-to-know--2 {
+				padding-top: 0;
+				padding-bottom: 0;
+			}
+			#es-rc #es-rc-content .es-for-everyone {
+				background-color: #fff;
+				color: #002349;
+				padding-bottom: 58px;
+			}
+			#es-rc #es-rc-content .es-for-everyone__inner {
+				padding: 64px 47px;
+				padding-top: 0;
+				font-size: 18px;
+			}
+			#es-rc #es-rc-content .es-for-everyone__inner-title {
+				font-size: 19px;
+				margin-bottom: 50px;
+				font-weight: 700;
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-for-everyone__inner-description {
+				text-align: center;
+			}
+			#es-rc #es-rc-content .es-for-everyone__inner-description b {
+				margin-bottom: 10px;
+			}
+			#es-rc #es-rc-content .es-for-everyone__content {
+				display: flex;
+				margin-bottom: 40px;
+			}
+			#es-rc #es-rc-content .es-for-everyone__content-left-image {
+				width: 516px;
+				height: 516px;
+				margin-top: 30px;
+				margin-left: -50px;
+			}
+			#es-rc #es-rc-content .es-for-everyone__content-left-functionalities {
+				margin-left: 35px;
+				margin-top: -70px;
+				display: flex;
+				align-items: center;
+				gap: 24.5px;
+			}
+			#es-rc
+				#es-rc-content
+				.es-for-everyone__content-left-functionalities-item-image {
+				height: 99px;
+				width: 99px;
+			}
+			#es-rc #es-rc-content .es-for-everyone__content-left-functionalities-item-text {
+				margin-top: 16px;
+				display: inline-block;
+				width: 100%;
+				text-align: center;
+				font-size: 18px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-for-everyone__content-description {
+				padding: 64px 47px;
+			}
+			#es-rc #es-rc-content .es-for-everyone__content-description-title {
+				margin-bottom: 30px;
+				font-size: 36px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-for-everyone__content-description-text {
+				font-size: 18px;
+				font-weight: 400;
+			}
+			#es-rc #es-rc-content .es-for-everyone__title {
+				text-align: center;
+				font-size: 36px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-open-sodastream-tastes {
+				display: flex;
+			}
+			#es-rc #es-rc-content .es-open-sodastream-tastes > * {
+				width: 100%;
+			}
+			#es-rc #es-rc-content .es-open-sodastream-tastes__item {
+				padding: 39px 10px 35px 10px;
+				text-align: center;
+				font-size: 18px;
+			}
+			#es-rc #es-rc-content .es-open-sodastream-tastes__item > img {
+				width: 148px;
+				margin-bottom: 32px;
+			}
+			#es-rc #es-rc-content .es-open-sodastream-tastes__item:nth-child(1) {
+				color: #fff;
+				background-color: #0a2042;
+			}
+			#es-rc #es-rc-content .es-open-sodastream-tastes__item:nth-child(2) {
+				color: #002349;
+				background-color: #f6c641;
+			}
+			#es-rc #es-rc-content .es-open-sodastream-tastes__item:nth-child(3) {
+				color: #fff;
+				background-color: #e25d5f;
+			}
+			#es-rc #es-rc-content .es-footer__title {
+				margin-bottom: 40px;
+				text-align: center;
+				font-size: 36px;
+				font-weight: 700;
+			}
+			#es-rc #es-rc-content .es-footer__section-1 {
+				padding-top: 50px;
+				padding-bottom: 50px;
+				background-color: #005bab;
+			}
+			#es-rc #es-rc-content .es-footer__section-1-sodastreams {
+				margin-top: 15px;
+				padding-bottom: 20px;
+				width: 95%;
+			}
+			#es-rc #es-rc-content .es-footer__section-2 {
+				padding-top: 20px;
+				padding-bottom: 20px;
+				background-color: #005bab;
+			}
+			#es-rc #es-rc-content .es-footer__section-2-title {
+				text-align: center;
+				font-size: 27px;
+				font-weight: 700;
+				color: #eeeae5;
+			}
+			#es-rc #es-rc-content .es-footer__section-2-logo {
+				margin-top: 27px;
+				width: 183px;
+			}
+			@media screen and (max-width: 400px) {
+				#es-rc #es-rc-content .es-assets-mix-gas-and-taste {
+					flex-direction: column;
+				}
+				#es-rc #es-rc-content .es-assets-mix-gas-and-taste__image-container {
+					width: 100%;
+					position: relative;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-gas-and-taste__image-container-text-title {
+					font-size: 70px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-gas-and-taste__image-container-text-subtitle {
+					font-size: 30px;
+				}
+			}
+			@media screen and (max-width: 650px) {
+				#es-rc #es-rc-content .es-assets-mix-gas-and-taste-2 {
+					flex-direction: column;
+				}
+			}
+			@media screen and (max-width: 650px) {
+				#es-rc #es-rc-content .es-assets-mix-func-and-style__section-2-mobile {
+					display: block;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-mobile-sodastream-image {
+					width: 200px;
+					position: relative;
+					bottom: -20px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-mobile-image-container {
+					display: flex;
+					flex-direction: column;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-mobile-image-container-text-title {
+					margin-top: 14px;
+					font-size: 18px;
+					font-weight: 700;
+					text-align: center;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-mobile-image-container-text-image {
+					margin-top: 20px;
+					width: 100px;
+				}
+				#es-rc #es-rc-content .es-assets-mix-func-and-style__section-2 {
+					display: none;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content-left-functionalities {
+					margin-top: 32px;
+					flex-direction: column;
+				}
+				#es-rc #es-rc-content .es-footer__section-2-title {
+					font-size: 14px;
+				}
+				#es-rc #es-rc-content .es-assets-mix-func-and-style__section-1-description {
+					padding: 42px 48px;
+				}
+				#es-rc #es-rc-content .es-sodastream-mix__title,
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-1-description-title,
+				#es-rc #es-rc-content .es-assets-mix__content-description-title,
+				#es-rc #es-rc-content .es-worth-to-know__title,
+				#es-rc #es-rc-content .es-for-everyone__content-description-title,
+				#es-rc #es-rc-content .es-for-everyone__title {
+					font-size: 30px;
+				}
+				#es-rc #es-rc-content .es-assets-mix-func-and-style::after {
+					height: 50px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-description-title {
+					font-size: 22px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-description-subtitle {
+					font-size: 18px;
+				}
+				#es-rc #es-rc-content .es-open-sodastream-tastes {
+					flex-direction: column;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-gas-and-taste__image-container-text-title {
+					font-size: 30px;
+					line-height: 28px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-gas-and-taste__image-container-text-subtitle {
+					font-size: 24px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1 {
+					position: static;
+					flex-direction: column;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-description-title {
+					margin-top: 50px;
+					font-size: 30px;
+					text-align: center;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-description-text {
+					font-size: 24px;
+					text-align: center;
+					margin-bottom: 50px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-logo {
+					width: 200px;
+					padding-top: 25px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__img {
+					width: 100%;
+					padding: 0 30px;
+				}
+				#es-rc #es-rc-content .es-assets-mix__content {
+					align-items: center;
+					flex-direction: column;
+				}
+				#es-rc #es-rc-content .es-assets-mix__content-image {
+					width: 100%;
+					padding: 0 30px;
+					margin: 0 0 42px 0;
+				}
+				#es-rc #es-rc-content .es-assets-mix-func-and-style__section-1 {
+					padding-top: 78px;
+					flex-direction: column-reverse;
+					align-items: center;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-1__mix-date-night-image {
+					width: 100%;
+					padding: 0 30px;
+					margin: 0;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content {
+					padding-top: 78px;
+					flex-direction: column;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content-left {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content-left-image {
+					height: inherit;
+					width: 100%;
+					padding: 0 30px;
+					margin: unset;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content-left-functionalities {
+					margin-left: unset;
+				}
+			}
+			@media (min-width: 651px) and (max-width: 768px) {
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-sodastream-image {
+					bottom: -58px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-gas-and-taste-2__image-container-text-2-title-2--small {
+					font-size: 19px;
+				}
+				#es-rc #es-rc-content .es-assets-mix-func-and-style::after {
+					height: 50px;
+				}
+				#es-rc #es-rc-content .es-assets-mix-func-and-style__section-2 {
+					width: 753px;
+					padding-bottom: 100px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-image-container-text-title {
+					font-size: 16px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+						1
+					) {
+					top: 166px;
+					left: 40px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+						2
+					) {
+					top: 320px;
+					left: 35px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+						3
+					) {
+					top: 490px;
+					left: 45px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+						4
+					) {
+					top: 240px;
+					left: 465px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+						5
+					) {
+					top: 420px;
+					left: 465px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-gas-and-taste__image-container-text-title {
+					font-size: 30px;
+					line-height: 28px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-gas-and-taste__image-container-text-subtitle {
+					font-size: 18px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1 {
+					position: static;
+					flex-direction: column;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-description-title {
+					margin-top: 50px;
+					font-size: 36px;
+					text-align: center;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-description-text {
+					font-size: 24px;
+					text-align: center;
+					margin-bottom: 50px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-logo {
+					width: 200px;
+					padding-top: 25px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1 .es-gas-and-mix__img {
+					width: 500px;
+				}
+				#es-rc #es-rc-content .es-assets-mix__content {
+					align-items: center;
+					flex-direction: column;
+				}
+				#es-rc #es-rc-content .es-assets-mix__content-image {
+					width: 500px;
+					margin: 0 0 42px 0;
+				}
+				#es-rc #es-rc-content .es-assets-mix-func-and-style__section-1 {
+					padding-top: 78px;
+					flex-direction: column-reverse;
+					align-items: center;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-1__mix-date-night-image {
+					width: 500px;
+					margin: 0;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content {
+					padding-top: 78px;
+					flex-direction: column;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content-left {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content-left-image {
+					height: 500px;
+					width: 500px;
+					margin: unset;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content-left-functionalities {
+					margin-left: unset;
+				}
+			}
+			@media (min-width: 769px) and (max-width: 997px) {
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-gas-and-taste-2__image-container-text-2-title-2--small {
+					font-size: 22px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-sodastream-image {
+					bottom: -58px;
+				}
+				#es-rc #es-rc-content .es-assets-mix-func-and-style::after {
+					height: 50px;
+				}
+				#es-rc #es-rc-content .es-assets-mix-func-and-style__section-2 {
+					width: 753px;
+					padding-bottom: 100px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+						1
+					) {
+					top: 170px;
+					left: 40px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+						2
+					) {
+					top: 320px;
+					left: 35px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+						3
+					) {
+					top: 490px;
+					left: 60px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+						4
+					) {
+					top: 245px;
+					left: 465px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-2-image-container-text-title:nth-child(
+						5
+					) {
+					top: 420px;
+					left: 445px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1 {
+					position: static;
+					flex-direction: column;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-logo {
+					max-width: 200px;
+					padding-top: 25px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-description-title {
+					margin-top: 50px;
+					font-size: 36px;
+					text-align: center;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-description-text {
+					font-size: 24px;
+					text-align: center;
+					margin-bottom: 50px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1 img {
+					width: 500px;
+				}
+				#es-rc #es-rc-content .es-assets-mix__content {
+					align-items: center;
+					flex-direction: column;
+				}
+				#es-rc #es-rc-content .es-assets-mix__content-image {
+					width: 500px;
+					margin: 0 0 42px 0;
+				}
+				#es-rc #es-rc-content .es-assets-mix-func-and-style__section-1 {
+					padding-top: 78px;
+					flex-direction: column-reverse;
+					align-items: center;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-func-and-style__section-1__mix-date-night-image {
+					width: 500px;
+					margin: 0;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content {
+					padding-top: 78px;
+					flex-direction: column;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content-left {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content-left-image {
+					height: 500px;
+					width: 500px;
+					margin: unset;
+				}
+				#es-rc #es-rc-content .es-for-everyone__content-left-functionalities {
+					margin-left: unset;
+				}
+			}
+			@media screen and (min-width: 768px) {
+				#es-rc #es-rc-content .es-pre-kv {
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-between;
+				}
+				#es-rc #es-rc-content .es-pre-kv__left {
+					width: 45%;
+				}
+				#es-rc #es-rc-content .es-pre-kv__video {
+					height: 100%;
+					min-height: 300px;
+				}
+				#es-rc #es-rc-content .es-pre-kv__list {
+					flex-direction: row;
+					padding-top: 50px;
+					padding-bottom: 50px;
+					padding-right: 50px;
+				}
+			}
+			@media screen and (min-width: 998px) {
+				#es-rc #es-rc-content .es-gas-and-mix {
+					padding-top: 100px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__img {
+					margin-top: -85px;
+					margin-right: -150px;
+					max-height: 650px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-logo {
+					max-width: 200px;
+					margin-left: 0;
+					margin-bottom: 75px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__img {
+					z-index: 1;
+				}
+				#es-rc #es-rc-content .es-assets-mix__content-image {
+					height: 570px;
+				}
+				#es-rc #es-rc-content .es-for-everyone__inner-title {
+					font-size: 26px;
+				}
+				#es-rc
+					#es-rc-content
+					.es-assets-mix-gas-and-taste-2__image-container-text-2-title-2--small {
+					font-size: 30px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-1-description {
+					margin-top: -110px;
+				}
+				#es-rc #es-rc-content .es-gas-and-mix__section-2 {
+					margin-top: -185px;
+				}
+			} /*# sourceMappingURL=styles.css.map */
+    </style>
+
+<div id="es-rc">
+	<div id="es-rc-content">
+		<div class="es-pre-kv">
+			<div class="es-pre-kv__left">
+				<iframe src="https://www.youtube.com/embed/TtvZR1YwjRM"
+								title="SodaStream MIX – Gazuj dowolny napój! | Miksuj, gazuj, smakuj"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								class="es-pre-kv__video"
+								allowfullscreen></iframe>
+			</div>
+			<div class="es-pre-kv__right">
+				<div class="es-pre-kv__list">
+					<div class="es-pre-kv__list-item">
+						<img src="./img/header-icon-1.png"
+								 alt="Soki owocowe"
+								 class="es-pre-kv__list-item-img">
+						<p class="es-pre-kv__list-item-title">Soki owocowe</p>
+					</div>
+					<div class="es-pre-kv__list-item">
+						<img src="./img/header-icon-2.png"
+								 alt="Koktajle"
+								 class="es-pre-kv__list-item-img">
+						<p class="es-pre-kv__list-item-title">Koktajle</p>
+					</div>
+					<div class="es-pre-kv__list-item">
+						<img src="./img/header-icon-3.png"
+								 alt="Woda"
+								 class="es-pre-kv__list-item-img">
+						<p class="es-pre-kv__list-item-title">Woda</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="es-gas-and-mix">
+			<div class="es-gas-and-mix__section-1">
+				<div class="es-gas-and-mix__section-1-description">
+					<img class="es-gas-and-mix__section-1-logo"
+							 src="./img/logo-mix.png"
+							 alt="logo Sodastream Mix">
+					<p class="es-gas-and-mix__section-1-description-title">
+						gazuj co chcesz <br>
+						miksuj jak lubisz
+					</p>
+					<p class="es-gas-and-mix__section-1-description-text">
+						saturator do gazowania wody, napojów i koktajli MIX, Czarny
+					</p>
+				</div>
+				<img src="./img/mix-fizzing-orange.png"
+						 class="es-gas-and-mix__img"
+						 alt="Kobieta w niebieskiej bluzce obsługująca czarną maszynę SodaStream z butelką pomarańczowego napoju, obok dzbanek i szklanka">
+			</div>
+
+			<div class="es-gas-and-mix__section-2">
+				<p class="es-gas-and-mix__section-2-description-text">
+					Otwórz się na nowe możliwości z saturatorem Sodastream MIX! To <b>prawdziwy przełom w sztuce
+						domowego&nbsp;kreowania napojów
+						gazowanych.</b> Teraz możesz nasycić bąbelkami dowolny napój: wodę, świeże soki, a nawet
+					wino
+					czy ulubione koktajle*. Twórz
+					unikalne kompozycje, którymi uświetnisz sobotnie śniadanie, uroczysty obiad, spotkania z
+					przyjaciółmi lub wieczorne
+					imprezy.
+				</p><br><br>
+				<p class="es-gas-and-mix__section-2-description-title">
+					poczuj nieograniczoną wolność w miksowaniu smaków!
+				</p>
+				<p class="es-gas-and-mix__section-2-description-subtitle">
+					*Produkt nie zawiera alkoholu. W przypadku stosowania go w napojach alkoholowych, prosimy o
+					ich spożywanie w sposób
+					odpowiedzialny. <br>Wizualizacje nie przedstawiają napojów alkoholowych.
+				</p>
+			</div>
+		</div>
+
+		<div class="es-assets-mix-gas-and-taste-2">
+			<div class="es-assets-mix-gas-and-taste-2__image-container">
+				<img src="./img/juices.png"
+						 alt="Wlewanie pomarańczowego napoju z dzbanka do butelki SodaStream na blacie">
+				<div class="es-assets-mix-gas-and-taste-2__image-container-text-2">
+					<p
+						 class="es-assets-mix-gas-and-taste-2__image-container-text-title-2 es-assets-mix-gas-and-taste-2__image-container-text-2-title-2--small">
+						soki owocowe</p>
+				</div>
+			</div>
+			<div class="es-assets-mix-gas-and-taste-2__image-container">
+				<img src="./img/coctails.png"
+						 alt="Maszyna do wody gazowanej SodaStream MIX z butelką napoju pomarańczowego w trakcie nasycania">
+				<div class="es-assets-mix-gas-and-taste-2__image-container-text-2">
+					<p
+						 class="es-assets-mix-gas-and-taste-2__image-container-text-title-2 es-assets-mix-gas-and-taste-2__image-container-text-2-title-2--small">
+						koktajle</p>
+				</div>
+			</div>
+			<div class="es-assets-mix-gas-and-taste-2__image-container">
+				<img src="./img/water.png"
+						 alt="Dwie osoby wznoszą toast kieliszkami z gazowanymi napojami, jeden z plasterkiem brzoskwini, drugi z cytryną, na jasnym tle.">
+				<div class="es-assets-mix-gas-and-taste-2__image-container-text-2">
+					<p
+						 class="es-assets-mix-gas-and-taste-2__image-container-text-title-2 es-assets-mix-gas-and-taste-2__image-container-text-2-title-2--small">
+						woda</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="es-assets-mix">
+			<div class="es-assets-mix__content">
+				<img src="./img/harmonized-layer.png"
+						 alt="Maszyna SodaStream z czarną obudową, butelką z żółtym napojem i  butelką wody gazowanej, obok pojemnik Quick Connect 60L"
+						 class="es-assets-mix__content-image">
+				<div class="es-assets-mix__content-description">
+					<p class="es-assets-mix__content-description-title">
+						MIX akcesoriów na każdą okazję
+					</p>
+					<p class="es-assets-mix__content-description-text-1">
+						Sodastream MIX to saturator do gazowania napojów, który daje Ci&nbsp;pełną&nbsp;swobodę
+						tworzenia
+						wyjątkowych smaków. W zestawie
+						znajdziesz wszystko, by od razu rozpocząć bąbelkową przygodę:
+					</p>
+					<ol class="es-assets-mix__content-description-text-2">
+						<li>Saturator do wody i napojów Sodastream MIX</li>
+						<li>Cylinder CO₂ z szybkim złączem (Quick Connect)</li>
+						<li>Butelkę FUSE 1 l (BPA free)</li>
+						<li>Butelkę 430 ml (BPA free) – idealną do testowania smaków i przygotowywania
+							pojedynczych porcji napoju.
+						</li>
+					</ol>
+					<p class="es-assets-mix__content-description-text-3">
+						Obie butelki wykonane z odpornego na zarysowania i&nbsp;uszkodzenia&nbsp;Tritanu są
+						dostosowane
+						do mycia w zmywarce.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="es-assets-mix-func-and-style">
+			<div class="es-assets-mix-func-and-style__section-1">
+				<div class="es-assets-mix-func-and-style__section-1-description">
+					<p class="es-assets-mix-func-and-style__section-1-description-title">
+						MIX funkcjonalności i stylu
+					</p>
+					<p class="es-assets-mix-func-and-style__section-1-description-text">
+						Saturator do przygotowywania napojów Sodastream MIX to kwintesencja wszechstronności i
+						stylu. Jego nowoczesny design&nbsp;w&nbsp;czarnym, matowym wykończeniu bez trudu
+						wkomponuje się w estetykę każdej
+						kuchni.<br><br><br>
+
+						Urządzenie jest niezwykle łatwe w obsłudze i równie proste w utrzymaniu czystości.
+						Butelki oraz demontowalne elementy
+						– tackę ociekową, pokrywę tacki, dyszę gazującą i&nbsp;zbiornik&nbsp;przelewowy – możesz
+						bezpiecznie umyć w zmywarce.<br><br><br>
+
+						Dzięki przemyślanej konstrukcji, która zapobiega przeciekaniu, Twój kuchenny blat
+						pozostanie zawsze czysty. Sodastream
+						MIX to symbol komfortu i elegancji, który w dyskretny sposób podnosi jakość Twojego
+						codziennego życia.
+					</p>
+				</div>
+				<img src="./img/mix-date-night.png"
+						 alt="Maszyna SodaStream MIX z mężczyzną nasycającym napój, kobietą trzymającą pomarańczowy koktajl i kieliszkiem wina na blacie"
+						 class="es-assets-mix-func-and-style__section-1__mix-date-night-image">
+			</div>
+			<div class="es-assets-mix-func-and-style__section-2">
+				<img src="./img/sodastream.png"
+						 alt="Czarna maszyna SodaStream z butelką pomarańczowego napoju, z oznaczonymi ikonami na czarnym tle"
+						 class="es-assets-mix-func-and-style__section-2-sodastream-image">
+				<div class="es-assets-mix-func-and-style__section-2-image-container-text">
+					<p class="es-assets-mix-func-and-style__section-2-image-container-text-title">Umożliwia
+						nagazowanie<br> soków, koktajli oraz wody</p>
+					<p class="es-assets-mix-func-and-style__section-2-image-container-text-title">Intuicyjny
+						montaż <br>cylindra dzięki systemowi <br>Quick Connect
+
+					</p>
+					<p class="es-assets-mix-func-and-style__section-2-image-container-text-title">Szybki system
+						montażu butelki Snap & Lock
+					</p>
+					<p class="es-assets-mix-func-and-style__section-2-image-container-text-title">Łatwo
+						demontowalne <br>części, które możesz<br> umyć w zmywarce
+					</p>
+					<p class="es-assets-mix-func-and-style__section-2-image-container-text-title">Bezprzewodowy
+					</p>
+				</div>
+			</div>
+
+			<div class="es-assets-mix-func-and-style__section-2-mobile">
+				<div class="es-assets-mix-func-and-style__section-2-image-container">
+					<div class="es-assets-mix-func-and-style__section-2-image-container-text">
+						<img src="./img/coctail-icon.png"
+								 alt=""
+								 aria-hidden="true"
+								 class="es-assets-mix-func-and-style__section-2-mobile-image-container-text-image">
+						<p class="es-assets-mix-func-and-style__section-2-mobile-image-container-text-title">
+							Umożliwia nagazowanie soków, koktajli oraz wody
+						</p>
+					</div>
+					<div class="es-assets-mix-func-and-style__section-2-image-container-text">
+						<img src="./img/connect-icon.png"
+								 alt=""
+								 aria-hidden="true"
+								 class="es-assets-mix-func-and-style__section-2-mobile-image-container-text-image">
+						<p class="es-assets-mix-func-and-style__section-2-mobile-image-container-text-title">
+							Łatwo demontowalne części, które możesz umyć w zmywarce
+						</p>
+					</div>
+					<div class="es-assets-mix-func-and-style__section-2-image-container-text">
+						<img src="./img/snap-icon.png"
+								 alt=""
+								 aria-hidden="true"
+								 class="es-assets-mix-func-and-style__section-2-mobile-image-container-text-image">
+						<p class="es-assets-mix-func-and-style__section-2-mobile-image-container-text-title">
+							Intuicyjny montaż cylindra dzięki systemowi Quick Connect
+						</p>
+					</div>
+					<div class="es-assets-mix-func-and-style__section-2-image-container-text">
+						<img src="./img/remove-icon.png"
+								 alt=""
+								 aria-hidden="true"
+								 class="es-assets-mix-func-and-style__section-2-mobile-image-container-text-image">
+						<p class="es-assets-mix-func-and-style__section-2-mobile-image-container-text-title">
+							Bezprzewodowy </p>
+					</div>
+					<div class="es-assets-mix-func-and-style__section-2-image-container-text">
+						<img src="./img/unplug-icon.png"
+								 alt=""
+								 aria-hidden="true"
+								 class="es-assets-mix-func-and-style__section-2-mobile-image-container-text-image">
+						<p class="es-assets-mix-func-and-style__section-2-mobile-image-container-text-title">
+							Szybki system montażu butelki Snap & Lock </p>
+					</div>
+				</div>
+				<img src="./img/sodastream-alone.png"
+						 alt="Maszyna SodaStream z czarną obudową i butelką z pomarańczowym napojem gazowanym"
+						 class="es-assets-mix-func-and-style__section-2-mobile-sodastream-image">
+			</div>
+		</div>
+
+
+		<div class="es-assets-mix-gas-and-taste">
+			<div class="es-assets-mix-gas-and-taste__image-container">
+				<img src="./img/mix.jpg"
+						 alt="Wlewanie pomarańczowego napoju z dzbanka do butelki SodaStream na blacie">
+				<div class="es-assets-mix-gas-and-taste__image-container-text">
+					<p class="es-assets-mix-gas-and-taste__image-container-text-title">miksuj</p>
+					<p class="es-assets-mix-gas-and-taste__image-container-text-subtitle">jak chcesz</p>
+				</div>
+			</div>
+			<div class="es-assets-mix-gas-and-taste__image-container">
+				<img src="./img/gas.jpg"
+						 alt="Maszyna do wody gazowanej SodaStream MIX z butelką napoju pomarańczowego w trakcie nasycania">
+				<div class="es-assets-mix-gas-and-taste__image-container-text">
+					<p class="es-assets-mix-gas-and-taste__image-container-text-title">gazuj</p>
+					<p class="es-assets-mix-gas-and-taste__image-container-text-subtitle">co chcesz</p>
+				</div>
+			</div>
+			<div class="es-assets-mix-gas-and-taste__image-container">
+				<img src="./img/taste.jpg"
+						 alt="Dwie osoby wznoszą toast kieliszkami z gazowanymi napojami, jeden z plasterkiem brzoskwini, drugi z cytryną, na jasnym tle.">
+				<div class="es-assets-mix-gas-and-taste__image-container-text">
+					<p class="es-assets-mix-gas-and-taste__image-container-text-title">smakuj</p>
+					<p class="es-assets-mix-gas-and-taste__image-container-text-subtitle">kiedy chcesz</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="es-for-everyone">
+			<div class="es-for-everyone__content">
+				<div class="es-for-everyone__content-left">
+					<img class="es-for-everyone__content-left-image"
+							 src="./img/mix-fizzing-pink.png"
+							 alt="Kobieta w beżowej bluzce obsługująca czarną maszynę SodaStream z różowym napojem w butelce, obok dzbanek i szklanka z lodem">
+				</div>
+				<div class="es-for-everyone__content-description">
+					<p class="es-for-everyone__content-description-title">
+						saturator dla każdego miksologa
+					</p>
+					<p class="es-for-everyone__content-description-text"><br>
+						Niezależnie od tego, czy jesteś doświadczonym barmanem, czy dopiero zaczynasz przygodę
+						z&nbsp;miksowaniem – Sodastream MIX
+						stanie się Twoim&nbsp;idealnym partnerem! Działa jak shaker
+						i&nbsp;mikser&nbsp;w&nbsp;jednym –
+						składniki
+						możesz wymieszać bezpośrednio w
+						butelce, a urządzenie błyskawicznie&nbsp;doda do nich bąbelki. Twórz
+						domowe&nbsp;lemoniady,
+						autorskie koktajle i mocktaile,
+						swobodnie eksperymentuj ze smakami i poziomem nagazowania.
+					</p>
+				</div>
+			</div>
+			<div class="es-for-everyone__inner">
+				<p class="es-for-everyone__inner-title">propozycja na orzeźwienie prosto od MIXa: <br>malinowy
+					Fizz
+					z Limonką i Miętą!</p>
+				<p class="es-for-everyone__inner-description">
+					Do butelki wlej świeżą wodę, syrop Sodastream o smaku malinowym i sok z limonki. Nagazuj
+					miksturę<br> w saturatorze.
+					Gotowy, bąbelkowy napój przelej do szklanki wypełnionej lodem. Dodaj świeże maliny,
+					plasterki limonki i listki mięty dla
+					dekoracji i aromatu. Gotowe!
+				</p>
+			</div>
+			<p class="es-for-everyone__title">
+				odkryj pełnię smaków z syropami<br> Sodastream
+			</p>
+		</div>
+
+		<div class="es-open-sodastream-tastes">
+			<div class="es-open-sodastream-tastes__item">
+				<img src="./img/pepsi-3.png"
+						 alt="Butelka SodaStream z koncentratem napoju Pepsi w niebiesko-białym kolorze z logo marki">
+				<p>
+					<b>kultowe smaki zawsze pod ręką</b><br>
+					Pepsi, Pepsi Cherry, Mirinda i 7UP – to&nbsp;legendarne napoje, które pasują do każdej
+					okazji. Do
+					obiadu, wieczornych spotkań
+					ze znajomymi,&nbsp;a&nbsp;także wtedy, gdy masz&nbsp;ochotę na coś pysznego.
+				</p>
+			</div>
+			<div class="es-open-sodastream-tastes__item">
+				<img src="./img/pepsi-1.png"
+						 alt="Butelka SodaStream Classics z koncentratem napoju tonic w żółtym kolorze z bąbelkami na etykiecie">
+				<p>
+					<b>zawsze sprawdzony wybór</b><br>
+					Sodastream Tonic, Cola, Cytryna Limonka i Xtreme Energy to klasyki,&nbsp;które nigdy
+					nie wychodzą
+					z&nbsp;mody. Wróć do ulubionych
+					smaków,&nbsp;kiedy tylko chcesz – i za każdym razem odkrywaj je na nowo.
+				</p>
+			</div>
+			<div class="es-open-sodastream-tastes__item">
+				<img src="./img/pepsi-2.png"
+						 alt="Butelka SodaStream Classics z koncentratem napoju pink grapefruit w różowym kolorze z grafiką owocu na etykiecie"
+						 class="es-open-sodastream-tastes__item-img">
+				<p class="es-open-sodastream-tastes__item-text">
+					<b>owocowe chwile pełne radości</b><br>
+					Malina, Marakuja, Pomarańcza Mango, Owoce Leśne – lekkie, soczyste i idealne na każdą porę
+					dnia. Świetnie sprawdzą się w
+					letnich drinkach i domowych lemoniadach, które uświetnią czas spędzony z bliskimi.
+				</p>
+			</div>
+		</div>
+
+		<div class="es-footer__section-1">
+			<p class="es-footer__title">Odkryj świat smaków Sodastream</p>
+			<img src="./img/sodastreams.png"
+					 alt="Zestaw butelek SodaStream z koncentratami napojów w różnych smakach, w tym Lipton, Pepsi, 7UP, Mountain Dew"
+					 class="es-footer__section-1-sodastreams">
+		</div>
+
+		<div class="es-worth-to-know">
+			<p class="es-worth-to-know__title">
+				jak działa Sodastream MIX?<br>łatwe gazowanie krok po kroku
+			</p>
+			<p class="es-worth-to-know__text">
+				Stwórz swój ulubiony napój gazowany w kilku krokach:<br><br><br><br>
+
+				<b>1. Przygotuj butelkę i saturator:</b>
+				Napełnij butelkę Sodastream schłodzonym napojem do wyznaczonej linii. Odchyl zbiornik zbierający
+				nadmiar napoju w swoją
+				stronę i zamontuj butelkę w saturatorze. Włóż szyjkę butelki do mechanizmu Snap&Lock, dociśnij
+				ją do góry i do tyłu, a
+				następnie przekręć pokrętło blokady.<br><br><br>
+
+				<b>2. Nagazuj napój:</b>
+				Naciśnij przycisk gazowania, przytrzymaj przez 1 sekundę i zwolnij. Powtarzaj tą czynność, do
+				momentu, aż uzyskasz
+				ulubiony poziom nagazowania napoju: 1-2 przyciśnięcia to delikatny gaz, 4-5 przyciśnięć średni
+				poziom nagazowania, a 5 i
+				więcej razy intensywne bąbelki.<br><br><br>
+
+				<b>3. Uwolnij nadmiar gazu i piany:</b>
+				Odczekaj 5 sekund, aż piana odrobinę opadnie, następnie przekręć pokrętło zwalniające do pozycji
+				I aby uwolnić gaz i i
+				zmniejszyć ilość piany. Gdy zredukujesz jej nadmiar przekręć pokrętło do pozycji II.<br><br><br>
+
+				<b>4. Odblokuj i wyjmij butelkę:</b>
+				Gdy piana całkiem opadnie, przekręć pokrętło do pozycji początkowej. Wyjmij butelkę, delikatnie
+				pociągając w swoją
+				stronę. Twoje bąbelki są gotowe!<br><br><br>
+
+				Aby utrzymać urządzenie w czystości, po każdym gazowaniu napoju innego niż woda, zalecamy
+				przepłukać pod bieżącą wodą
+				dyszę gazującą, zbiornik przelewowy, tackę ociekową i jej pokrywę.
+			</p>
+			<iframe src="https://www.youtube.com/embed/TtvZR1YwjRM?si=zozWEQBuRSmBj9Lo&rel=0"
+							class="es-sodastream-mix__video"
+							title="YouTube video player"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen=""></iframe>
+		</div>
+		<div class="es-worth-to-know es-worth-to-know--2">
+			<p class="es-worth-to-know__title">
+				co warto wiedzieć o Sodastream MIX?
+			</p>
+			<p class="es-worth-to-know__text">
+				<b>Czy mogę gazować napoje inne niż woda w saturatorze Sodastream MIX?</b><br>
+				Tak, saturator Sodastream MIX umożliwia bezpieczne i wygodne gazowanie napojów innych niż woda.
+				Możesz w nim nagazować
+				dowolne napoje – soki, koktajle, a nawet napoje alkoholowe.*<br><br><br>
+
+				<b>Jak prawidłowo czyścić urządzenie?</b><br>
+				Po każdym gazowaniu napoju innego niż woda należy dokładnie przepłukać dyszę gazującą, zbiornik
+				przelewowy, tackę
+				ociekową i jej pokrywę. Wszystkie te elementy są demontowalne i można je bezpiecznie umyć w
+				zmywarce – dla łatwiejszego
+				utrzymania higieny.<br><br><br>
+
+				<b>Jak kontrolować nadmiar piany, który powstaje podczas gazowania napojów?</b><br>
+				Sodastream MIX jest wyposażony w specjalne pokrętło, które pozwala kontrolować ilość piany
+				poprzez uwalnianie nadmiaru
+				gazu. Dzięki temu nawet przy gazowaniu soków, lemoniady czy koktajli nie musisz się martwić, że
+				napój się przeleje.<br><br><br>
+
+				<b>Jakie butelki pasują do Sodastream MIX?</b><br>
+				Urządzenie jest kompatybilne ze wszystkimi butelkami Sodastream wykonanymi z Tritanu – Fuse 1 l,
+				Fuse 0,5 l, My Only
+				Bottle 0,5 l, a także z metalową butelką Sodastream Fizz&Go. W zestawie znajdziesz też
+				dedykowaną dla saturatora
+				Sodastream MIX butelkę o pojemności 430 ml – idealną do przygotowywania pojedynczych porcji
+				napoju lub testowania
+				smaków.<br><br><br>
+
+			</p>
+		</div>
+		<div class="es-footer">
+			<div class="es-footer__section-2">
+				<p class="es-footer__section-2-title">
+					#drinkbetter </p>
+			</div>
+		</div>
+	</div>
+</div>
